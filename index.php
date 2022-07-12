@@ -92,13 +92,13 @@ timeC(200)
          }
          echo "<span style='color: $color'>Welcome ". $_POST[ 'name'] ."</span>" . $_POST[ 'surname']. "<br />";
          echo "You are " . $_POST['age']. " years old.";
-         echo "My Hobby is".$_POST['hobbies'].".";
+         
      }
  }
  if(isset($_GET['submit'])){
     if($_GET["hobbies"]);
  }
-
+ echo "My Hobby is".$_GET['hobbies'].".";
 ?>
 </body>
 </html>
