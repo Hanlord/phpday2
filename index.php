@@ -79,7 +79,7 @@ timeC(200)
        <form action="index.php" method ="GET">
            Hobbies: <input type="text"  name="hobbies"/>
            <input  type="submit" name="submit2"  />
-</form>
+        </form>
 <?php
  if( isset($_POST['submit']))
  {
@@ -90,12 +90,12 @@ timeC(200)
          }else{
             $color = 'red';
          }
-         echo "<span style='color: $color'>Welcome ". $_POST[ 'name'] ."</span>" . $_POST[ 'surname']. "<br />";
+         echo "<span style='color: $color'>Welcome ". $_POST[ 'name']  ." ". $_POST[ 'surname']. "</span>"."<br />";
          echo "You are " . $_POST['age']. " years old.";
          
      }
  }
- if(isset($_GET['submit'])){
+ if(isset($_GET['submit2'])){
     if($_GET["hobbies"]);
  }
  echo "My Hobby is".$_GET['hobbies'].".";
